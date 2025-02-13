@@ -40,7 +40,7 @@ function App() {
         setMessages((prevMessages) => [...prevMessages, userMessage]);
         
         try {
-            const response = await axios.post("http://localhost:8000/chat/", { text: query });
+            const response = await axios.post("https://orange-xylophone-6x7wrv49vqx2wq7-8000.app.github.dev/chat/", { text: query });
             const botMessage = { 
                 text: response.data.response, 
                 sender: "bot",
