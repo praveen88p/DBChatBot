@@ -18,23 +18,33 @@
 
 ## Backend Setup
 
-1. Install Python dependencies:
+1. Navigate to the frontend directory:
+
+   ```bash
+   cd backend
+   ```
+   
+2. Create virtual environment:
+
+   ```bash
+   python3 -m venv venv
+   ```
+
+3. Install Python dependencies:
 
    ```bash
    pip install -r requirements.txt
    ```
 
-2. Create a `.env` file with your configurations:
+4. Create a `.env` file with your configurations:
 
    ```
-   DATABASE_URL=your_database_url
    HUGGINGFACE_API_KEY=your_api_key
-   Model Link - https://huggingface.co/facebook/bart-large-cnn
    ```
 
-3. Set up your MySQL database and update `database.py` with your credentials.
+5. Set up your MySQL database and update `database.py` with your credentials.
 
-4. Run the FastAPI server:
+6. Run the FastAPI server:
 
    ```bash
    uvicorn main:app --reload
@@ -47,7 +57,7 @@
 1. Navigate to the frontend directory:
 
    ```bash
-   cd chatbot-ui
+   cd frontend
    ```
 
 2. Install dependencies:
